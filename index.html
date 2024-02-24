@@ -3,8 +3,8 @@
 <html>
 <head>
 	<title>Kudzwai Construction & Projects</title>
-	<meta name="description" content="Kudzwai Construction & Projects">
-	<meta name="keywords" content="construction company near me, roofing,gate installation, welding in Pretoria,gate welding and installation ">
+	<meta name="description" content="Global Websites">
+	<meta name="keywords" content="websites development, website, application development">
 	<style type="text/css">
 		*{
 			padding: 0;
@@ -14,25 +14,25 @@
 			box-sizing: border-box;
 		}
 		nav{
-			background: black;
+			background: blue;
 			height: 80px;
 			width: 100%;
+			display: inline-block;
 		}
 		#main-head{
-			font-size: 30px;
+			font-size: 20px;
 			color: white;
 			line-height: 80px;
-			background-size: cover;
 			display: inline-block;
 			margin-bottom: 0px;
-			text-align: float left;
-			margin-right: 20px;
+			float: left;
 
 
 		}
 		nav ul{
 			float: right;
 			margin-right: 20px;
+			display: inline-block;
 
 		}
 		nav ul li{
@@ -56,18 +56,7 @@
 				transition: 0.15s;
 				
 
-			}
-			.checkbtn{
-				font-size: 30px;
-				color: white;
-				float: right;
-				line-height: 80px;
-				margin-right: 40px;
-				cursor: pointer;
-				display: none;
-			}
-			#check{
-				display: none;
+			
 			}
 			
 			nav ul li a:hover{
@@ -78,185 +67,94 @@
 				padding-top: 5px;
 				padding-bottom: 5px;
 				transition: 0.15s;
-				opacity: 0.5;
-			}
-			#body-main{
-				background-image: url(images/t.jpeg);
-				background-size: cover;
-			}
-			#tribe{
-				color: white;
-				margin-right: 10px;
-			}
-			#facebook{
-				width: 30px;
-				border-radius: 7px;
-				margin-right: 10px;
-				margin-left: 30px;
-			}
-			#instagram{
-				width: 20px;
-				border-radius: 5px;
-			}
-			#tribe:hover{
-				color: blue;
-				background-color: white;
-				cursor: pointer;
-			}
-		
-		a:hover{
-			color: red;
-			background-color: green,
-			cursor: pointer;
-			opacity: 0.6;
-			transition: 0.17s;
-		}
-		#container{
-			width: 100%;
-			min-height: 100vh;
-			padding: 5%;
-			background-image: url(images/search);
-			background-position: center;
-			background-size: cover;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.slider-frame{
-		overflow: hidden;
-		width: 800px;
-		margin-left: 400px;
-		margin-top: 20px;
-		height: 700px;
-		margin-left: 360px;
-		margin-top: 20px;
-
-	}
-	#j{
-		width: 800px;
-		border-radius: 5px;
-	}
-	#k{
-		width: 800px;
-		border-radius: 5px;
-	}
-	#l{
-		width: 800px;
-		border-radius: 5px;
-	}
-
-	@-webkit-keyframes slide_animation{
-		0% {left:0px;}
-		10% {left:0px;}
-		20% {left:800px;}
-		30% {left:800px;}
-		40% {left:1600px;}
-		50% {left:1600px;}
-		60% {left:800px;}
-		70% {left:800px;}
-		80% {left:0px;}	
-		90% {left:0px;}
-		100% {left:0px;}
-		
-	}
-	.slide-images{
-		width: 800px;
-		margin: 0 0 0 -800px;
-		position: relative;
-		-webkit-animation-name: slide_animation;
-		-webkit-animation-duration: 20s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-direction: alternate;
-		-webkit-animation-play-state: running;
-	}
-	.image-container{
-		width: 900px;
-		position: relative;
-		float: left;
-		height: 800px;
-	}
-	.fit-screen{
-		height: 100dvh;
-		
-	}	
-	h5{ color: white;
-	font-size: 20px; 
-}
-#chain{
-	width: 100px;
-	border-radius: 50px;
-	display: inline-block;
+				opacity: 0.5;}
 	
 
+			
+		#slider{
+			overflow: hidden;
+		}
+		#slider figure{
+			position: relative;
+			width: 500%;
+			margin: 0;
+			left: 0;
+			animation: 20s slider infinite;
 
-}
-h4{
-	color: white;
-	text-align: center;
-}
-p{
-	color: black;
-	text-align: center;
-}
-#whats{
-	width: 30px;
-	border-radius: 7px;
-	margin-right: 10px;
-}	
-h5{
-	color: white;
-	margin-left: 30px;
-}
-		p{ 
-			color: white;
-		 }
+		}
+		#slider figure img{
+			float: left;
+			width: 20%;
+		}
+		@keyframes slider{
+			0%{
+				left: 0;
+			}
+			20%{
+				left: 0;
+			}
+			25%{
+				left: -100%;
+			}
+			45%{
+				left: -100%;
+			}
+			50%{
+				left: -200%;
+			}
+			70%{
+				left: -200%;
+			}
+			75%{
+				left: -300%;
+			}
+			95%{
+				left: -300%;
+			}
+			100%{
+				left: -400%;
+			
+		}
+		.facebook{
+			width: 20px;
+			border-radius: 1px;
+		}
+		.instagram{
+			width: 10px;
+			border-radius: 1px;
+		}
+
 	</style>
-	<link rel="stylesheet" type="text/css" href="http://kit.fontawesome.com/a076d05399">
 </head>
 
-<br>
-<body id="body-main">
-	<div class="fit-screen">
-	 <img id="chain" src="images/w.jpeg"><h1 id="main-head">Kudzwai Construction & Projects </h1>
 	<br>
+<body>
+	
 	<nav>
-<h5>+27 83 868 1052</h5>
+
+
+<h6 id="main-head">Kudzwai Construction & Projects</h6><br>
 		
-	<a href="https://www.facebook.com/"><img id="facebook" src="images/facebook.jpg" target="_blank"></a>
-	<a href="https://api.whatsapp.com/send?phone=%2B27838681052&data=ARArWsDNitpWZheDda1cy78LTY1BSsjPn6c5_YJ492M1sTHf3qNvD9NDIKQxi_jQQN-PvMdjncOxTtlHWB-y1_5s_Igx-9PST05H4AMjusDB4CCMF_-stHU1mlAIxp1cleMGK6mV5_FgCKuf0aYLcvM4Vw&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR35dsDp1hRv3XR7CKfl_JQFM9sFJfqnGRnaL3AUPwHv1xIcT_6wOcCfSX0"><img id="whats" src="images/whats.jpeg"></a>
-	 	
-		<ul>
-		<li><a class="active" href="index.html">HOME</a></li>
-		<li><a href="details.html">ABOUT US</a></li>
-		
-		<li><a href="contacts.html">CONTACTS</a></li>
+	
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="details.html">About Us</a></li>
+		<li><a href="details.html">Services</a></li>
+		<li><a href="contact.html">Contacts</a></li>
 	</ul>
 	</nav>
-	<br>
-		<h5></h5>  <small>Seeing is beleiving let us make your drawing a reality </small><br>
-		<p>We play with mud and iron all day.</p>
-	<br>
 
-	<div class="slider-frame">
-	<div class="slide-images">
-		
-			
-			<div class="img-container">
-				<img  src="images/u.jpeg">
-				
-			</div>
 
-			<div class="img-container">
-				<img  src="">
-				
-			</div>
-			
-	</div>
-</div>
+<div id="slider">
+	<figure>
+	<img src="images/ba.jpeg">
+	<img src="images/be.jpeg">
+	<img src="images/bi.jpeg">
+	<img src="images/j.jpeg">
+	</figure>
 	
 </div>
-	<br>
-	<br>
-	
+	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-1e8ef165-5c53-4f05-acaa-294d0f15f191"></div>
 </body>
 </html>
