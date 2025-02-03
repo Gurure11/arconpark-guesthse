@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="cnDRU_HNhdPu_V8YjC7gQor86MN3bsKdVOBogb5Pnzc" />
     <title>Kudzwai Construction & Projects</title>
     <meta name="description" content="Kudzwai Construction">
     <meta name="keywords" content="Kudzwai Construction, construction company, swimming pool builders, tiling experts, building, construction, roofing, painting services">
@@ -17,7 +18,9 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
 
         nav {
@@ -26,8 +29,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 0 40px;
             color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         #main-head {
@@ -55,31 +61,97 @@
             border-radius: 5px;
         }
 
-        /* Slider */
-        .slider {
-            width: 100%;
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .slides {
+        /* Hero Section */
+        .hero {
+            background: url('images/ba.jpeg') no-repeat center center/cover;
+            height: 100vh;
             display: flex;
-            width: 400%;
-            animation: slide 20s infinite ease-in-out;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
 
-        .slides img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
         }
 
-        @keyframes slide {
-            0%, 25% { transform: translateX(0); }
-            30%, 50% { transform: translateX(-100%); }
-            55%, 75% { transform: translateX(-200%); }
-            80%, 100% { transform: translateX(-300%); }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .btn {
+            background: #ffcc00;
+            color: #004aad;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-content .btn:hover {
+            background: #e6b800;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            background: #f4f4f4;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 16px;
         }
 
         /* Footer */
@@ -87,10 +159,7 @@
             background: #004aad;
             color: white;
             text-align: center;
-            padding: 20px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 40px 20px;
         }
 
         .social-icons a {
@@ -101,6 +170,20 @@
         }
 
         .social-icons a:hover {
+            color: #ffcc00;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .footer-links a:hover {
             color: #ffcc00;
         }
     </style>
@@ -115,14 +198,40 @@
         </ul>
     </nav>
 
-    <div class="slider">
-        <div class="slides">
-            <img src="images/ba.jpeg" alt="Slide 1">
-            <img src="images/be.jpeg" alt="Slide 2">
-            <img src="images/bi.jpeg" alt="Slide 3">
-            <img src="images/j.jpeg" alt="Slide 4">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building Your Dreams</h1>
+            <p>Expert construction services tailored to your needs.</p>
+            <button class="btn">Get a Quote</button>
         </div>
-    </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Kudzwai Construction & Projects is a leading construction company specializing in building, roofing, tiling, and painting services. With years of experience, we deliver high-quality results that exceed our clients' expectations.</p>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Swimming Pool Construction</h3>
+                <p>We design and build custom swimming pools that transform your backyard into a paradise.</p>
+            </div>
+            <div class="service-item">
+                <h3>Tiling & Flooring</h3>
+                <p>Expert tiling services for both residential and commercial properties.</p>
+            </div>
+            <div class="service-item">
+                <h3>Roofing</h3>
+                <p>Durable and stylish roofing solutions to protect your home or business.</p>
+            </div>
+            <div class="service-item">
+                <h3>Painting</h3>
+                <p>Professional painting services to refresh and enhance your space.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2025 Kudzwai Construction & Projects</p>
@@ -130,6 +239,11 @@
         <div class="social-icons">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://wa.me/0838681052" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="details.html">About </a>
+            <a href="contact.html">Contact</a>
         </div>
     </footer>
 </body>
