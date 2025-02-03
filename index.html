@@ -1,161 +1,138 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="google-site-verification" content="cnDRU_HNhdPu_V8YjC7gQor86MN3bsKdVOBogb5Pnzc" />
-	<title>Kudzwai Construction & Projects</title>
-	<meta name="description" content="Kudzwai Construction">
-	<meta name="keywords" content="Kudzwai Construction, construction company, swimming pool builders, tiling experts, building, construction, roofing, painting services">
-	
-	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			list-style: none;
-			box-sizing: border-box;
-		}
-		nav{
-			background: blue;
-			height: 80px;
-			width: 100%;
-			display: inline-block;
-		}
-		#main-head{
-			font-size: 20px;
-			color: white;
-			line-height: 80px;
-			display: inline-block;
-			margin-bottom: 0px;
-			float: left;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="cnDRU_HNhdPu_V8YjC7gQor86MN3bsKdVOBogb5Pnzc" />
+    <title>Kudzwai Construction & Projects</title>
+    <meta name="description" content="Kudzwai Construction">
+    <meta name="keywords" content="Kudzwai Construction, construction company, swimming pool builders, tiling experts, building, construction, roofing, painting services">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-		}
-		nav ul{
-			float: right;
-			margin-right: 20px;
-			display: inline-block;
+        nav {
+            background: #004aad;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+        }
 
-		}
-		nav ul li{
-			display: inline-block;
-			line-height: 80px;
-			margin: 0 5px;
-			position: relative;
+        #main-head {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-		}
-		nav ul li a{
-			color: white;
-			font-size: 20px;
-			text-transform: uppercase;
-			padding: 7px 13px;
-			border-radius: 3px;
-			display: inline-block;
-					
-			}
-			a.active,a:hover{
-				color: white;
-				transition: 0.15s;
-				
+        nav ul {
+            display: flex;
+        }
 
-			
-			}
-			
-			nav ul li a:hover{
-				color: white;
-				display: inline-block;
-				background-color: green;
-				padding: 5px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				transition: 0.15s;
-				opacity: 0.5;}
-	
+        nav ul li {
+            margin: 0 15px;
+        }
 
-			
-		#slider{
-			overflow: hidden;
-		}
-		#slider figure{
-			position: relative;
-			width: 500%;
-			margin: 0;
-			left: 0;
-			animation: 20s slider infinite;
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
 
-		}
-		#slider figure img{
-			float: left;
-			width: 20%;
-		}
-		@keyframes slider{
-			0%{
-				left: 0;
-			}
-			20%{
-				left: 0;
-			}
-			25%{
-				left: -100%;
-			}
-			45%{
-				left: -100%;
-			}
-			50%{
-				left: -200%;
-			}
-			70%{
-				left: -200%;
-			}
-			75%{
-				left: -300%;
-			}
-			95%{
-				left: -300%;
-			}
-			100%{
-				left: -400%;
-			
-		}
-		.facebook{
-			width: 20px;
-			border-radius: 1px;
-		}
-		.instagram{
-			width: 10px;
-			border-radius: 1px;
-		}
+        nav ul li a:hover {
+            background: green;
+            border-radius: 5px;
+        }
 
-	</style>
+        /* Slider */
+        .slider {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            width: 400%;
+            animation: slide 12s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Footer */
+        footer {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 10px;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+    </style>
 </head>
-
-	<br>
 <body>
-	
-	<nav>
+    <nav>
+        <div id="main-head">Kudzwai Construction - 083 868 1052</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="details.html">About Us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
 
+    <div class="slider">
+        <div class="slides">
+            <img src="images/ba.jpeg" alt="Slide 1">
+            <img src="images/be.jpeg" alt="Slide 2">
+            <img src="images/bi.jpeg" alt="Slide 3">
+            <img src="images/j.jpeg" alt="Slide 4">
+        </div>
+    </div>
 
-<h6 id="main-head">Kudzwai Construction   083 868 1052</h6><br>
-		
-	
-	<ul>
-		<li><a class="active" href="index.html">Home</a></li>
-		<li><a href="details.html">About Us</a></li>
-		<li><a href="contact.html">Contacts</a></li>
-	</ul>
-	</nav>
-
-
-<div id="slider">
-	<figure>
-	<img src="images/ba.jpeg">
-	<img src="images/be.jpeg">
-	<img src="images/bi.jpeg">
-	<img src="images/j.jpeg">
-	</figure>
-	
-</div>
-	<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-1e8ef165-5c53-4f05-acaa-294d0f15f191"></div>
+    <footer>
+        <p>&copy; 2025 Kudzwai Construction & Projects</p>
+        <p>Midrand, South Africa</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/0838681052" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
