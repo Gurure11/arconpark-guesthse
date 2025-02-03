@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="cnDRU_HNhdPu_V8YjC7gQor86MN3bsKdVOBogb5Pnzc" />
     <title>Kudzwai Construction & Projects</title>
     <meta name="description" content="Kudzwai Construction">
     <meta name="keywords" content="Kudzwai Construction, construction company, swimming pool builders, tiling experts, building, construction, roofing, painting services">
@@ -67,7 +66,7 @@
         .slides {
             display: flex;
             width: 400%;
-            animation: slide 12s infinite;
+            animation: slide 20s infinite ease-in-out;
         }
 
         .slides img {
@@ -77,11 +76,10 @@
         }
 
         @keyframes slide {
-            0% { transform: translateX(0); }
-            25% { transform: translateX(-100%); }
-            50% { transform: translateX(-200%); }
-            75% { transform: translateX(-300%); }
-            100% { transform: translateX(0); }
+            0%, 25% { transform: translateX(0); }
+            30%, 50% { transform: translateX(-100%); }
+            55%, 75% { transform: translateX(-200%); }
+            80%, 100% { transform: translateX(-300%); }
         }
 
         /* Footer */
