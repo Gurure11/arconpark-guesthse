@@ -5,6 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Booking - Arcon Park Guest House</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        header {
+            background: #b8860b;
+            color: white;
+            padding: 20px;
+        }
+        .contact-form {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #faf0be;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid #b8860b;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        button {
+            background: #b8860b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #a0750e;
+        }
+        .footer-content {
+            background: #b8860b;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,43 +76,58 @@
     <section class="contact-form">
         <h2>Book Online</h2>
         <form action="submit_booking.php" method="post">
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="room">Room Type:</label><br>
-            <select id="room" name="room" required>
-                <option value="double_shared">Double Room with Shared Bathroom</option>
-                <option value="double_ensuite">Double Room with Ensuite</option>
-                <option value="family_room3">Family Room for 3</option>
-                <option value="family_room4">Family Room for 4</option>
-            </select>
-
-            <label for="checkin">Check-in Date:</label><br>
-            <input type="date" id="checkin" name="checkin" required>
-
-            <label for="checkout">Check-out Date:</label><br>
-            <input type="date" id="checkout" name="checkout" required>
-
-            <label for="message">Additional Requests:</label><br>
-            <textarea id="message" name="message" rows="4"></textarea>
-
-            <button type="submit">Submit Booking</button>
+            <table>
+                <tr>
+                    <th><label for="name">Full Name:</label></th>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Phone Number:</label></th>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <th><label for="room">Room Type:</label></th>
+                    <td>
+                        <select id="room" name="room" required>
+                            <option value="double_shared">Double Room with Shared Bathroom</option>
+                            <option value="double_ensuite">Double Room with Ensuite</option>
+                            <option value="family_room3">Family Room for 3</option>
+                            <option value="family_room4">Family Room for 4</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="checkin">Check-in Date:</label></th>
+                    <td><input type="date" id="checkin" name="checkin" required></td>
+                </tr>
+                <tr>
+                    <th><label for="checkout">Check-out Date:</label></th>
+                    <td><input type="date" id="checkout" name="checkout" required></td>
+                </tr>
+                <tr>
+                    <th><label for="message">Additional Requests:</label></th>
+                    <td><textarea id="message" name="message" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit Booking</button>
+                    </td>
+                </tr>
+            </table>
         </form>
     </section>
 
-    <footer><br><br>
+    <footer>
         <div class="footer-content">
             <div class="social-links">
                 <a href="https://www.facebook.com/p/Arcon-Park-Guest-House-100077186366971/" target="_blank">Facebook</a>
                 <a href="https://wa.me/27738700310" target="_blank">WhatsApp</a>
                 <a href="index.html">Home</a>
-            </div><br>
+            </div>
             <p>&copy; 2023 Arcon Park Guest House. All rights reserved.</p>
         </div>
     </footer>
