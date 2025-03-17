@@ -1,104 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-	<title>Kudzwai Construction & Projects</title>
-	<meta name="description" content="Kudzwai Construction & Projects">
-	<meta name="keywords" content="construction company near me, roofing, gate installation, welding in Pretoria, gate welding and installation ">
-	<style>
-		body {
-			background-image: url(images/b.jpeg);
-			background-size: cover;
-			color: black;
-			text-align: center;
-			align-items: center;
-			font-family: Arial, sans-serif;
-		}
-		nav {
-			background: linear-gradient(to right, #FFD700, #1E3A8A);
-			padding: 15px;
-			border-radius: 10px;
-			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-		}
-		nav a {
-			margin: 0 15px;
-			padding: 10px 15px;
-			color: white;
-			text-decoration: none;
-			font-weight: bold;
-			transition: all 0.3s ease;
-		}
-		nav a:hover {
-			background: yellowgreen;
-			color: red;
-			border-radius: 5px;
-		}
-		form {
-			background: rgba(255, 255, 255, 0.8);
-			padding: 20px;
-			border-radius: 10px;
-			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-			max-width: 400px;
-			margin: auto;
-		}
-		input, textarea, button {
-			width: 100%;
-			padding: 10px;
-			margin: 10px 0;
-			border-radius: 5px;
-			border: 1px solid #ccc;
-		}
-		button {
-			background: blue;
-			color: white;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-		button:hover {
-			background: red;
-		}
-		footer {
-			background: #1E3A8A;
-			color: white;
-			padding: 15px;
-			border-radius: 10px;
-			margin-top: 20px;
-		}
-	</style>
-    </head>       
-    <body>
-    	<h2>Kudzwai Construction & Projects</h2>
-	<nav>
-        <a href="index.html">Home Page</a>
-        <a href="blog.html">About Us</a>
-    </nav>
-    <hr>
-    <br>
-    <form action="https://formsubmit.co/bothwell.gurure11@gmail.com" method="POST">
-		<label>Name</label>
-		<input type="text" name="firstName" placeholder="Enter first name" required>
-		<label>Surname</label>
-		<input type="text" name="lastName" placeholder="Enter Surname" required>
-		<label>Contact Number</label>
-		<input type="text" placeholder="Cell No." required>
-		<label>Email</label>
-		<input type="email" name="EMAIL" placeholder="Enter Email" required>
-		<label>Message</label>
-		<textarea name="Message" placeholder="Enter your message" required></textarea>
-		<button type="submit">Submit</button>
-    </form>
-    <br>
-    <h3>Contact Details:</h3>
-    <p>
-        Cell No: +27 83 868 1052<br>
-        Director: Mugabe Rangarirai<br>
-	Email: mugabe715@gmail.com
-    </p>
-    <p>
-        Address: House No 35, Kumkumo Street, Lotus Gardens, Pretoria West, Pretoria<br>
-        <a href="https://maps.app.goo.gl/JxNEM3RT3ZmrWTMS6" target="_blank" style="color: red; text-decoration: none; font-weight: bold;">View on Map</a>
-    </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking - Arcon Park Guest House</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact & Booking</h1>
+        <p>Book your stay with us today!</p>
+    </header>
+
+    <section class="contact-form">
+        <h2>Book Online</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="double_shared">Double Room with Shared Bathroom</option>
+                <option value="double_ensuite">Double Room with Ensuite</option>
+                <option value="family_room3">Family Room for 3</option>
+                <option value="family_room4">Family Room for 4</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="message">Additional Requests:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
     <footer>
-        &copy; Kudzwai Construction 2024
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://facebook.com/arconpark" target="_blank">Facebook</a>
+                <a href="https://wa.me/27123456789" target="_blank">WhatsApp</a>
+                <a href="index.html">Home</a>
+            </div>
+            <p>&copy; 2023 Arcon Park Guest House. All rights reserved.</p>
+        </div>
     </footer>
-    </body>
+</body>
 </html>
