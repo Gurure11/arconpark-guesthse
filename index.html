@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arcon Park Lodge</title>
+    <title>Arcon Park Lodge - Your Home Away From Home</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Arcon Park Lodge</h1>
-        <p>Your home away from home in Vereeniging</p>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Arcon Park Lodge</h1>
+            <p class="site-description">Your home away from home in Vereeniging.</p>
+        </div>
     </header>
 
-    <!-- Image Slider -->
-    <div class="slider-container">
-        <div class="slider">
-            <img src="images/reception.jpg" alt="Guest House Exterior">
-            <img src="images/braai.jpg" alt="Braai Area">
-            <img src="images/swim.jpg" alt="Swimming Pool">
-        </div>
-    </div>
-
-    <!-- Room and Facility Grid -->
-    <section class="grid-container">
-        <div class="grid-item"><img src="images/room.jpg" alt="Double Room"><p>Double Room with Shared Bathroom</p></div>
-        <div class="grid-item"><img src="images/imba.jpg" alt="Double Ensuite"><p>Double Room with Ensuite</p></div>
-        <div class="grid-item"><img src="images/rooms.jpg" alt="Family Room for 3"><p>Family Room for 3</p></div>
-        <div class="grid-item"><img src="images/corn.jpg" alt="Family Room for 4"><p>Family Room for 4</p></div>
-        <div class="grid-item"><img src="images/braai.jpg" alt="Braai Area"><p>Beautiful Braai Area</p></div>
-        <div class="grid-item"><img src="images/arcon.jpg" alt="Swimming Pool"><p>Swimming Pool</p></div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.facebook.com/p/Arcon-Park-Guest-House-100077186366971/" target="_blank">Facebook</a>
-                <a href="https://wa.me/27738700310" target="_blank">WhatsApp</a>
-                <a href="contacts.html">Contact & Booking</a>
+    <main class="site-main">
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="images/reception.jpg" alt="Lodge Reception Area" class="slider-image">
+                    <img src="images/braai.jpg" alt="Communal Braai Area" class="slider-image">
+                    <img src="images/swim.jpg" alt="Outdoor Swimming Pool" class="slider-image">
+                </div>
             </div>
-            <p>&copy; 2025 Arcon Park Lodge. All rights reserved.</p>
+        </section>
+
+        <section class="rooms-facilities-section">
+            <div class="container">
+                <h2 class="section-title">Rooms & Facilities</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="images/room.jpg" alt="Standard Double Room" class="grid-image">
+                        <h3 class="grid-item-title">Standard Double Room</h3>
+                        <p class="grid-item-description">Double Room with Shared Bathroom.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/imba.jpg" alt="Deluxe Double Room" class="grid-image">
+                        <h3 class="grid-item-title">Deluxe Double Room</h3>
+                        <p class="grid-item-description">Double Room with Ensuite Bathroom.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/rooms.jpg" alt="Family Room (3 Guests)" class="grid-image">
+                        <h3 class="grid-item-title">Family Room (3 Guests)</h3>
+                        <p class="grid-item-description">Spacious Family Room for up to 3 guests.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/corn.jpg" alt="Family Room (4 Guests)" class="grid-image">
+                        <h3 class="grid-item-title">Family Room (4 Guests)</h3>
+                        <p class="grid-item-description">Large Family Room for up to 4 guests.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/braai.jpg" alt="Braai Area" class="grid-image">
+                        <h3 class="grid-item-title">Braai Area</h3>
+                        <p class="grid-item-description">Enjoy our beautiful communal braai area.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/arcon.jpg" alt="Swimming Pool" class="grid-image">
+                        <h3 class="grid-item-title">Swimming Pool</h3>
+                        <p class="grid-item-description">Relax and unwind by our refreshing swimming pool.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <nav class="social-links">
+                    <a href="https://www.facebook.com/p/Arcon-Park-Guest-House-100077186366971/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://wa.me/27738700310" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="contacts.html">Contact & Booking</a>
+                </nav>
+                <p class="copyright">&copy; 2025 Arcon Park Lodge. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
