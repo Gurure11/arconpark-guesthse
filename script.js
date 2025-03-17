@@ -11,5 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    setInterval(nextSlide, 2000); // Change slide every 2 seconds
 });
