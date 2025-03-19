@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcon Park Guest House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #d4af37;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>Arcon Park Guest House</h2>
+    <h3>Room Prices & Amenities</h3>
+    <table>
+        <tr>
+            <th>Room Type</th>
+            <th>Price Per Night</th>
+            <th>Amenities</th>
+        </tr>
+        <tr>
+            <td>Double Room with Shared Bathroom</td>
+            <td>R350</td>
+            <td>TV with DStv, Free WiFi</td>
+        </tr>
+        <tr>
+            <td>Double Room with En-suite Bathroom</td>
+            <td>R450</td>
+            <td>TV with DStv, Free WiFi</td>
+        </tr>
+        <tr>
+            <td>Room for 3 People (En-suite)</td>
+            <td>R650</td>
+            <td>TV with DStv, Free WiFi</td>
+        </tr>
+        <tr>
+            <td>Room for 4 People (En-suite)</td>
+            <td>R850</td>
+            <td>TV with DStv, Free WiFi</td>
+        </tr>
+    </table>
+    
+    <h3>Photo Gallery</h3>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Room Image 1">
+        <img src="image2.jpg" alt="Room Image 2">
+        <img src="image3.jpg" alt="Room Image 3">
+        <img src="image4.jpg" alt="Room Image 4">
+        <img src="image5.jpg" alt="Room Image 5">
+        <img src="image6.jpg" alt="Room Image 6">
+        <img src="image7.jpg" alt="Room Image 7">
+        <img src="image8.jpg" alt="Room Image 8">
+        <img src="image9.jpg" alt="Room Image 9">
+        <img src="image10.jpg" alt="Room Image 10">
+    </div>
+</body>
+</html>
